@@ -28,8 +28,10 @@ Trerminal 1:
 -> javac *.java
 -> rmic Servant
 -> rmiregistry
+
 Terminal 2:
 -> java Server
+
 Terminal 3:
 -> java Client
 -> 127.0.0.1
