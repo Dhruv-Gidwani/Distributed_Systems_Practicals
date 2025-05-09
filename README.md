@@ -40,3 +40,19 @@ Command to run RMI
         -> 127.0.0.1
         -> First Meaage
         -> Second Message
+
+
+Command to run CORBA
+
+        Terminal 1:
+        
+        -> idlj -fall Calculator.idl
+        -> javac CalculatorApp/*.java *.java
+        -> tnameserv -ORBInitialPort 1050
+
+        Terminal 2:
+        -> java CalculatorServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+        Terminal 3:
+        -> java CalculatorClient -ORBInitialPort 1050 -ORBInitialHost localhost
+        
