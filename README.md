@@ -20,4 +20,18 @@ Command to run RingAlgo.java
 
         -> javac RingAlgo.java
         -> java RingAlgo
-        
+
+
+Command to run RMI
+
+Trerminal 1: 
+-> javac *.java
+-> rmic Servant
+-> rmiregistry
+Terminal 2:
+-> java Server
+Terminal 3:
+-> java Client
+-> 127.0.0.1
+-> First Meaage
+-> Second Message
